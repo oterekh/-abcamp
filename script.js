@@ -18,11 +18,17 @@
 				templateUrl : 'pages/about.html',
 				controller  : 'aboutController'
 			})
-
+			
 			// route for the contact page
 			.when('/contact', {
 				templateUrl : 'pages/contact.html',
 				controller  : 'contactController'
+			})
+
+			
+			.when('/help', {
+				templateUrl : 'pages/help.html',
+				controller  : helpController'
 			});
 	});
 
@@ -38,4 +44,8 @@
 
 	scotchApp.controller('contactController', function($scope) {
 		$scope.message = 'Contact us! JK. This is just a demo.';
+	});
+	
+		scotchApp.controller('helpController', function($scope) {
+		$scope.message = 'Help will be there.';
 	});
