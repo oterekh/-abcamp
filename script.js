@@ -26,7 +26,7 @@
 			// route for the help page
 			.when('/help', {
 				templateUrl : 'pages/help.html',
-				controller  : helpController'
+				controller  : 'helpController'
 			});
 	});
 
