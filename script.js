@@ -1,5 +1,5 @@
 	// create the module and name it tolApp
-	var tolApp = angular.module('tolApp', ['ngRoute']);
+	var tolApp = angular.module('tolApp', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ui.bootstrap']);
 
 	// configure our routes
 	tolApp.config(function($routeProvider) {
@@ -8,25 +8,25 @@
 			// route for the home page
 			.when('/', {
 				templateUrl : 'pages/home.html',
-				controller  : 'mainController'
+				controller  : 'MainController'
 			})
 
 			// route for the about page
 			.when('/about', {
 				templateUrl : 'pages/about.html',
-				controller  : 'aboutController'
+				controller  : 'AboutController'
 			})
 			
 			// route for the contact page
 			.when('/contact', {
 				templateUrl : 'pages/contact.html',
-				controller  : 'contactController'
+				controller  : 'ContactController'
 			})
 
 			// route for the help page
 			.when('/help', {
 				templateUrl : 'pages/help.html',
-				controller  : 'helpController'
+				controller  : 'HelpController'
 			});
 	});
 
@@ -36,20 +36,19 @@
 		$scope.message = 'Everyone come and see how good I look!';
 	});
 
-	tolApp.controller('aboutController', function($scope) {
+	tolApp.controller('AboutController', function($scope) {
 		$scope.message = 'Look! I am an about page.';
 	});
 
-	tolApp.controller('contactController', function($scope) {
+	tolApp.controller('ContactController', function($scope) {
 		$scope.message = 'Contact us! JK. This is just a demo.';
 	});
 	
-		tolApp.controller('helpController', function($scope) {
+		tolApp.controller('HelpController', function($scope) {
 		$scope.message = 'Help will be there.';
 	});
 	
-	angular.module('ui.bootstrap.demo', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
-	angular.module('ui.bootstrap.demo').controller('CarouselDemoController', function ($scope) {
+	tolApp.controller('CarouselDemoController', function ($scope) {
 	 $scope.myInterval = 5000;
 	  $scope.noWrapSlides = false;
 	  $scope.active = 0;
