@@ -27,6 +27,12 @@
 			.when('/help', {
 				templateUrl : 'pages/help.html',
 				controller  : 'HelpController'
+			})
+			
+			// route for the help page
+			.when('/carousel', {
+				templateUrl : 'pages/carousel.html',
+				controller  : 'CarouselDemoController'
 			});
 	});
 
