@@ -19,8 +19,8 @@
 </head>
 
 <!-- define angular controller -->
-<body ng-controller="MainController">
-
+<body>
+  <div ng-controller="MainController">
   <nav class="navbar navbar-inverse">
     <div class="container">
       <div class="navbar-header">
@@ -41,8 +41,15 @@
 		<!-- this is where content will be injected -->
     <div ng-view></div>
   </div>
-  
-  <div ng-controller="CarouselDemoController">
+  <footer class="text-center">
+    <p>
+      <i class="fa fa-facebook"></i>
+      <a href="https://www.facebook.com/oleh.tereh">Oleh Terekh</a>
+    </p>
+  </footer>
+</div>
+
+<div ng-controller="CarouselDemoController">
   <div style="height: 305px">
     <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
       <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
@@ -71,14 +78,6 @@
     </div>
   </div>
 </div>
-  
-  <footer class="text-center">
-    <p>
-      <i class="fa fa-facebook"></i>
-      <a href="https://www.facebook.com/oleh.tereh">Oleh Terekh</a>
-    </p>
-  </footer>
-  
 </body>
 
 </html>
