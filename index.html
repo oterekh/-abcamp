@@ -33,7 +33,10 @@
   </nav>
 
   <div id="main">
-    <!-- Sidebar -->
+    <!-- angular templating -->
+		<!-- this is where content will be injected -->
+    <div ng-view>
+      <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
@@ -46,10 +49,8 @@
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
-    <!-- angular templating -->
-		<!-- this is where content will be injected -->
-    <div ng-view></div>
-    
+      
+    </div>
   </div>
   
   <footer class="text-center">
