@@ -29,7 +29,7 @@
 				controller  : 'HelpController'
 			})
 			
-			// route for the help page
+			// route for the carousel page
 			.when('/carousel', {
 				templateUrl : 'pages/carousel.html',
 				controller  : 'CarouselDemoController'
