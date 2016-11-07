@@ -39,19 +39,19 @@
 	// create the controller and inject Angular's $scope
 	tolApp.controller('MainController', function($scope) {
 		// create a message to display in our view
-		$scope.message = 'Everyone come and see how good I look!';
+		$scope.message = I am going to a hookah bar with members of a Frat I am joining and wondering what it is. I know its where you smoke, but is it bad for you? Because I absolutly will not smoke cigarrettes, pot, cigars or anything because someone in my family died from cancer because of it, so whats it all about?';
 	});
 
 	tolApp.controller('AboutController', function($scope) {
-		$scope.message = 'Look! I am an about page.';
+		$scope.message = ' you smoke flavored tabacco from a water pipe called a hookah. its very similar to a bong, except that it has hoses to smoke from, so like 4 people can smoke at once ';
 	});
 
 	tolApp.controller('ContactController', function($scope) {
-		$scope.message = 'Contact us! JK. This is just a demo.';
+		$scope.message = 'lvivhookah@gmail.com';
 	});
 	
 		tolApp.controller('HelpController', function($scope) {
-		$scope.message = 'Help will be there.';
+		$scope.message = 'It's tobacco. It's a bit sweeter than regular pipe tobacco. You could go to a hookah bar without getting a new bad habit, but since you feel so strongly, it probably isn't for you. ';
 	});
 	
 	tolApp.controller('CarouselDemoController', function ($scope) {
